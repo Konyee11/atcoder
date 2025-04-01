@@ -1,0 +1,11 @@
+CompileFlags:
+  Add: [
+    "-std=gnu++20",
+    "-Wall",
+    "-Wextra",
+    "-O2",
+    "-I/opt/homebrew/opt/gcc/include/c++/12",                              # g++-12 の C++ 標準ライブラリ
+    "-I/opt/homebrew/opt/gcc/include/c++/12/x86_64-apple-darwin23",       # サブアーキテクチャ（macOS用）
+    "-I/opt/homebrew/opt/gcc/lib/gcc/12/include",                          # GCC 内部用ヘッダ
+    "-I/Users/konyee/AtCoder/include"
+  ]

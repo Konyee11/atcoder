@@ -1,0 +1,22 @@
+#!/bin/bash
+
+PROBLEM="$1"
+if [ -z "$PROBLEM" ]; then
+  echo "Usage: newp <problem_id>"
+  exit 1
+fi
+
+TEMPLATE=~/AtCoder/templates/cpp
+DEST=~/AtCoder/problems/$PROBLEM
+
+if [ -d "$DEST" ]; then
+  echo "Directory already exists: $DEST"
+  exit 1
+fi
+
+mkdir -p "$DEST"
+cp "$TEMPLATE"/* "$DEST"
+
+echo "Created: $DEST"
+cd "$DEST"
+nvim main.cpp
