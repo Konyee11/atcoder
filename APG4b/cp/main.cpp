@@ -1,22 +1,37 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#ifdef LOCAL
-#define debug(x) cerr << #x << ": " << x << '\n'
-#else
-#define debug(x) 0
-#endif
-
-void solve() {
-    // 問題ごとの処理を書く
-
-}
-
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+  // 変数a,b,cにtrueまたはfalseを代入してAtCoderと出力されるようにする。
+  bool a = true; // true または false
+  bool b = false; // true または false
+  bool c = true; // true または false
 
-    int t = 1;
-    // cin >> t; // 複数ケースがある問題では有効に
-    while (t--) solve();
+  // ここから先は変更しないこと
+
+  if (a) {
+    cout << "At";
+  }
+  else {
+    cout << "Yo";
+  }
+
+  if (!a && b) {
+    cout << "Bo";
+  }
+  else if (!b || c) {
+    cout << "Co";
+  }
+
+  if (a && b && c) {
+    cout << "foo!";
+  }
+  else if (true && false) {
+    cout << "yeah!";
+  }
+  else if (!a || c) {
+    cout << "der";
+  }
+
+  cout << endl;
 }
